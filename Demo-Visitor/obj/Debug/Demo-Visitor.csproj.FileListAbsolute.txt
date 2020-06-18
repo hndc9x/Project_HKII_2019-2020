@@ -1,0 +1,10 @@
+D:\Desktop\Desktop\oop\giuaki\Demo-Visitor\Demo-Visitor\bin\Debug\Demo-Visitor.exe.config
+D:\Desktop\Desktop\oop\giuaki\Demo-Visitor\Demo-Visitor\bin\Debug\Demo-Visitor.exe
+D:\Desktop\Desktop\oop\giuaki\Demo-Visitor\Demo-Visitor\bin\Debug\Demo-Visitor.pdb
+D:\Desktop\Desktop\oop\giuaki\Demo-Visitor\Demo-Visitor\obj\Debug\Demo-Visitor.csprojAssemblyReference.cache
+D:\Desktop\Desktop\oop\giuaki\Demo-Visitor\Demo-Visitor\obj\Debug\Demo_Visitor.Form1.resources
+D:\Desktop\Desktop\oop\giuaki\Demo-Visitor\Demo-Visitor\obj\Debug\Demo_Visitor.Properties.Resources.resources
+D:\Desktop\Desktop\oop\giuaki\Demo-Visitor\Demo-Visitor\obj\Debug\Demo-Visitor.csproj.GenerateResource.cache
+D:\Desktop\Desktop\oop\giuaki\Demo-Visitor\Demo-Visitor\obj\Debug\Demo-Visitor.csproj.CoreCompileInputs.cache
+D:\Desktop\Desktop\oop\giuaki\Demo-Visitor\Demo-Visitor\obj\Debug\Demo-Visitor.exe
+D:\Desktop\Desktop\oop\giuaki\Demo-Visitor\Demo-Visitor\obj\Debug\Demo-Visitor.pdb
