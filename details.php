@@ -9,8 +9,7 @@
     }else {
         $id = $_GET['proid']; // Lấy productid trên host
     }
-	$customer_id = Session::get('customer_id'); // bỏ $ nha chú , $ là biến chứ không phải thuộc tính 
-	//$customer_id = Session::get('$customer_id'); // dòng lỗi ,nản chú ghê,easy vậy mà
+	$customer_id = Session::get('customer_id'); 
     if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['compare'])){
         // LẤY DỮ LIỆU TỪ PHƯƠNG THỨC Ở FORM POST
         $productid = $_POST['productid'];
@@ -45,14 +44,14 @@
 					<h2><?php echo $result_details['productName'] ?> </h2>
 					<p><?php echo $fm->textShorten($result_details['product_desc'], 150) ?></p>					
 					<div class="price">
-						<p>Price: <span><?php echo $fm->format_currency($result_details['price'])." VND" ?></span></p>
-						<p>Category: <span><?php echo $result_details['catName'] ?></span></p>
-						<p>Brand:<span><?php echo $result_details['brandName'] ?></span></p>
+						<p>Giá: <span><?php echo $fm->format_currency($result_details['price'])." VND" ?></span></p>
+						<p>Loại: <span><?php echo $result_details['catName'] ?></span></p>
+						<p>Thương hiệu:<span><?php echo $result_details['brandName'] ?></span></p>
 					</div>
 				<div class="add-cart">
 					<form action="" method="post">
 						<input type="number" class="buyfield" name="quantity" value="1" min="1" />
-						<input type="submit" class="buysubmit" name="submit" value="Add to cart"/>
+						<input type="submit" class="buysubmit" name="submit" value="Thêm vào giỏ hàng"/>
 					</form>
 						<?php 
 							if(isset($insertCompare)) {
@@ -83,7 +82,7 @@
 	
 					$login_check = Session::get('customer_login'); 
 						if($login_check){
-							echo '<input type="submit" class="buysubmit" name="compare" value="Compare product"/>'.'  ';
+							echo '<input type="submit" class="buysubmit" name="compare" value="Thêm vào danh sách so sánh"/>'.'  ';
 							
 						}else{
 							echo '';
@@ -104,7 +103,7 @@
 					$login_check = Session::get('customer_login'); 
 						if($login_check){
 							
-							echo '<input type="submit" class="buysubmit" name="wishlist" value="Add to wishlish" />';
+							echo '<input type="submit" class="buysubmit" name="wishlist" value="Thêm vào danh sách ưu thích" />';
 						}else{
 							echo '';
 						}
