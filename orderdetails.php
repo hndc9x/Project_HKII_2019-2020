@@ -34,9 +34,16 @@
 ?>
  <div class="main">
     <div class="content">
-    	<div class="cartoption">	
-    		<h2>Chi tiết đơn hàng</h2>
-	
+		<div class="section group">
+			<div class="content_top">
+				<div class="heading">
+    				<h3>Chi tiết hóa đơn</h3>
+    			</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+    	<div class="cartoption">		
 			<div class="cartpage">
 			    	
 						<table class="tblone">
@@ -92,7 +99,7 @@
 								 }elseif($result['status']==1) {
 								 ?>	
 								 <td>
-								 	<a href="?confirmid=<?php echo $customer_id ?>&price=<?php echo $result['price'] ?>&time=<?php echo $result['date_order'] ?>">Confirm</a>
+								 	<a href="?confirmid=<?php echo $customer_id ?>&price=<?php echo $result['price'] ?>&time=<?php echo $result['date_order'] ?>">Xác nhận</a>
 								 </td>
 								 <?php 
 								}else{

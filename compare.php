@@ -21,8 +21,16 @@
  
  <div class="main">
     <div class="content">
-    	<div class="cartoption">
-    	<h2>So sánh sản phẩm</h2>		
+		<div class="section group">
+			<div class="content_top">
+				<div class="heading">
+    				<h3>So sánh sản phẩm</h3>
+    			</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+    	<div class="cartoption">	
 			<div class="cartpage">
 			    	
 			    	<?php

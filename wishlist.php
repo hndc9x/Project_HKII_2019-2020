@@ -12,8 +12,16 @@
   ?>
  <div class="main">
     <div class="content">
+		<div class="section group">
+			<div class="content_top">
+				<div class="heading">
+    				<h3>Sản phẩm yêu thích</h3>
+    			</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
     	<div class="cartoption">
-    	<h2>Sản phẩm yêu thích</h2>		
 			<div class="cartpage">
 			    	
 			    	
