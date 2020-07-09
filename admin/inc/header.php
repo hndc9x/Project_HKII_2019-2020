@@ -2,7 +2,6 @@
     include '../lib/session.php';
      Session::checkSession();
  ?>
-
 <?php
   header("Cache-Control: no-cache, must-revalidate");
   header("Pragma: no-cache"); 
@@ -78,7 +77,7 @@
             <ul class="nav main">
                 <li class="ic-dashboard"><a href="index.php"><span>Dashboard</span></a> </li>
                 <li class="ic-form-style"><a href=""><span>Thông tin người dùng</span></a></li>
-				<li class="ic-form-style"><a href="changepassword.php"><span>Đổi mật khẩu</span></a></li>
+				<!-- <li class="ic-form-style"><a href="changepassword.php"><span>Đổi mật khẩu</span></a></li> -->
 				<li class="ic-grid-tables"><a href="inbox.php"><span>Đơn hàng</span></a></li>
                 <li class="ic-charts"><a href="../index.php"><span>Website</span></a></li>
             </ul>
