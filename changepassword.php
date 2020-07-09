@@ -9,7 +9,14 @@
 </style>
 <div class="grid_10">
     <div class="box round first grid">
-        <h2>Thay đổi mật khẩu</h2>
+    <div class="section group">
+			<div class="content_top">
+				<div class="heading">
+    				<h3>Đổi mật khẩu</h3>
+    			</div>
+				<div class="clear"></div>
+			</div>
+		</div>
         <div class="block">               
          <form>
             <table class="form">					
@@ -18,11 +25,7 @@
                         <label>Mật khẩu cũ</label>
                     </td>
                     <td>
-                        <input type="password" placeholder="Nhập mật khẩu cũ..."  name="title" class="medium" style="
-    width: 95%;
-    height: 33px;
-    margin-top: 7px;
-"/>
+                        <input type="password" placeholder="Nhập mật khẩu cũ..."  name="title" class="medium"/>
                     </td>
                 </tr>
 				 <tr>
@@ -30,11 +33,7 @@
                         <label>Mật khẩu mới</label>
                     </td>
                     <td>
-                        <input type="password" placeholder="Nhập mật khẩu mới..." name="slogan" class="medium" style="
-    width: 95%;
-    height: 33px;
-    margin-top: 7px;
-"/>
+                        <input type="password" placeholder="Nhập mật khẩu mới..." name="slogan" class="medium"/>
                     </td>
                 </tr>
 				 

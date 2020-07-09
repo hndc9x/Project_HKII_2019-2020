@@ -9,24 +9,18 @@
                 <tr>
                     <td>
                         <label>Mật khẩu cũ</label>
-                    </td>
-                    <td>
                         <input type="password" placeholder="Nhập mật khẩu cũ..."  name="title" class="medium" />
                     </td>
                 </tr>
 				 <tr>
                     <td>
                         <label>Mật khẩu mới</label>
-                    </td>
-                    <td>
-                        <input type="password" placeholder="Nhập mật khẩu mới..." name="slogan" class="medium" />
+                        <input type="password" placeholder="Nhập mật khẩu mới..." name="slogan" class="medium" />   
                     </td>
                 </tr>
 				 
 				
 				 <tr>
-                    <td>
-                    </td>
                     <td>
                         <input type="submit" name="submit" Value="Update" />
                     </td>
