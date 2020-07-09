@@ -40,7 +40,7 @@
                
                 <tr>
                     <td>
-                        <label>Name</label>
+                        <label>Tên sản phẩm</label>
                     </td>
                     <td>
                         <input name="productName" value="<?php echo $result_product['productName'] ?>" type="text" class="medium" />
@@ -56,7 +56,7 @@
                 </tr>
                  <tr>
                     <td>
-                        <label>Quantity</label>
+                        <label>Số lượng</label>
                     </td>
                     <td>
                         <input name="productQuantity" value="<?php echo $result_product['productQuantity'] ?>" type="text" class="medium" />
@@ -64,11 +64,11 @@
                 </tr>
                 <tr>
                     <td>
-                        <label>Category</label>
+                        <label>Danh mục</label>
                     </td>
                     <td>
                         <select id="select" name="category">
-                            <option>Select Category</option>
+                            <option>---Chọn danh mục---</option>
                             <?php 
                             $cat = new category();
                             $catlist = $cat->show_category();
@@ -92,11 +92,11 @@
                 </tr>
                 <tr>
                     <td>
-                        <label>Brand</label>
+                        <label>Thương hiệu</label>
                     </td>
                     <td>
                         <select id="select" name="brand">
-                            <option>Select Brand</option>
+                            <option>---Chọn thương hiệu---</option>
                             <?php 
                             $brand = new brand();
                             $brandlist = $brand->show_brand();
@@ -121,7 +121,7 @@
                 
                  <tr>
                     <td style="vertical-align: top; padding-top: 9px;">
-                        <label>Description</label>
+                        <label>Mô tả</label>
                     </td>
                     <td>
                         <textarea name="product_desc" class="tinymce"><?php echo $result_product['product_desc'] ?></textarea>
@@ -129,7 +129,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <label>Price</label>
+                        <label>Giá</label>
                     </td>
                     <td>
                         <input name="price" value="<?php echo $result_product['price'] ?>" type="text" class="medium" />
@@ -138,7 +138,7 @@
             
                 <tr>
                     <td>
-                        <label>Upload Image</label>
+                        <label>Hình ảnh</label>
                     </td>
                     <td>
                         <img src="uploads/<?php echo $result_product['image'] ?>" width="100"><br>
@@ -148,21 +148,21 @@
                 
                 <tr>
                     <td>
-                        <label>Product Type</label>
+                        <label>Loại</label>
                     </td>
                     <td>
                         <select id="select" name="type">
-                            <option>Select Type</option>
+                            <option>---Chọn---</option>
                             <?php 
                             if ($result_product['type'] ==0) {
                              ?>
-                            <option selected value="0">Featured</option>
-                            <option value="1">Non-Featured</option>
+                            <option selected value="0">Phổ biến</option>
+                            <option value="1">Không phổ biến</option>
                             <?php 
                                 }else{
                             ?>
-                            <option value="1">Featured</option>
-                            <option selected value="0">Non-Featured</option>    
+                            <option value="1">Phổ biến</option>
+                            <option selected value="0">Không phổ biến</option>    
                             <?php 
                         }
                              ?>
@@ -175,7 +175,7 @@
                 <tr>
                     <td></td>
                     <td>
-                        <input type="submit" name="submit" value="Update" />
+                        <input type="submit" name="submit" value="Lưu" />
                     </td>
                 </tr>
             </table>

@@ -2,35 +2,35 @@
     <div class="box sidemenu">
         <div class="block" id="section-menu">
             <ul class="section menu">
-                <li><a class="menuitem">Category</a>
+                <li><a class="menuitem">Danh mục</a>
                     <ul class="submenu">
-                        <li><a href="catadd.php">Add New Category</a> </li>
-                        <li><a href="catlist.php">Category List</a> </li>
+                        <li><a href="catadd.php">Thêm danh mục</a> </li>
+                        <li><a href="catlist.php">Các danh mục</a> </li>
                     </ul>
                 </li>
-                <li><a class="menuitem">Brand</a>
+                <li><a class="menuitem">Thương hiệu</a>
                     <ul class="submenu">
-                        <li><a href="brandadd.php">Add New Brand</a> </li>
-                        <li><a href="brandlist.php">Brand List</a> </li>
+                        <li><a href="brandadd.php">Thêm thương hiệu</a> </li>
+                        <li><a href="brandlist.php">Các thương hiệu</a> </li>
                     </ul>
                 </li>
-                <li><a class="menuitem">Product</a>
+                <li><a class="menuitem">Sản Phẩm</a>
                     <ul class="submenu">
-                        <li><a href="productadd.php">Add New Product</a> </li>
-                        <li><a href="productlist.php">Product List</a> </li>
+                        <li><a href="productadd.php">Thêm sản phẩm</a> </li>
+                        <li><a href="productlist.php">Các Sản Phẩm</a> </li>
                     </ul>
                 </li>
-                <li><a class="menuitem">Warehouse</a>
+                <li><a class="menuitem">Nhà kho</a>
                     <ul class="submenu">
-                        <li><a href="warehouse.php">Warehouse Manager</a> </li>
+                        <li><a href="warehouse.php">Quản lý nhà kho</a> </li>
                      
                     </ul>
                 </li>
                 
                <li><a class="menuitem">Slider</a>
                     <ul class="submenu">
-                        <li><a href="slideradd.php">Add Slider</a> </li>
-                        <li><a href="sliderlist.php">All Slider</a> </li>
+                        <li><a href="slideradd.php">Thêm Slider</a> </li>
+                        <li><a href="sliderlist.php">Các Slider</a> </li>
                     </ul>
                 </li>
 				 
