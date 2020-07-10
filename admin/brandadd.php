@@ -5,7 +5,7 @@
 <?php
     // gọi class category
     $brand = new brand(); 
-    if($_SERVER['REQUEST_METHOD'] == 'POST'){
+    if($_SERVER['REQUEST_METHOD'] == 'POST'){ // bat bc co
         // LẤY DỮ LIỆU TỪ PHƯƠNG THỨC Ở FORM POST
         $brandName = $_POST['brandName'];
         $insertBrand = $brand -> insert_brand($brandName); // hàm check catName khi submit lên
