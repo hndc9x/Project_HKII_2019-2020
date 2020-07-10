@@ -9,7 +9,7 @@
 	/**
 	* 
 	*/
-	class product
+	class product // chau dep trai quá
 	{
 		private $db;
 		private $fm;
@@ -28,7 +28,6 @@
 			
 			$productName = mysqli_real_escape_string($this->db->link, $date['productName']);
 			$product_code = mysqli_real_escape_string($this->db->link, $date['product_code']);
-
 			$productQuantity = mysqli_real_escape_string($this->db->link, $date['productQuantity']);
 			$category = mysqli_real_escape_string($this->db->link, $date['category']);
 			$brand = mysqli_real_escape_string($this->db->link, $date['brand']);
@@ -38,7 +37,7 @@
 			 //mysqli gọi 2 biến. (catName and link) biến link -> gọi conect db từ file db
 			
 			// kiểm tra hình ảnh và lấy hình ảnh cho vào folder upload
-			$permited = array('jpg','jpeg','png','gif');
+			$permited = array('jpg','jpeg','png','gif'); // kiễm tra xem có thuộc kiểu dữ liêu này không
 			$file_name = $_FILES['image']['name'];
 			$file_size = $_FILES['image']['size'];
 			$file_temp = $_FILES['image']['tmp_name'];
@@ -49,7 +48,7 @@
 			$uploaded_image = "uploads/".$unique_image;
 
 			if($product_code ='' || $productName == "" || $productQuantity == "" || $category == "" || $brand == "" || $product_desc == "" || $price == "" || $type == "" || $file_name == ""){
-				$alert = "<span class='error'>Fiedls must be not empty</span>";
+				$alert = "<span class='error'>Không được để trống ô</span>";
 				return $alert;
 			}else{
 				move_uploaded_file($file_temp, $uploaded_image);
