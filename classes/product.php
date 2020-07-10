@@ -9,7 +9,7 @@
 	/**
 	* 
 	*/
-	class product // chau dep trai
+	class product // chau dep trai quá
 	{
 		private $db;
 		private $fm;
