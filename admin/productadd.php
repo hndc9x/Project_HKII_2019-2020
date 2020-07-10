@@ -54,7 +54,7 @@
                     </td>
                     <td>
                         <select id="select" name="category">
-                            <option>Chọn chuyên mục</option>
+                            <option>---Chọn chuyên mục---</option>
                             <?php 
                             $cat = new category();
                             $catlist = $cat->show_category();
