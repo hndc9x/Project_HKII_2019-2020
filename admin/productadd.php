@@ -37,7 +37,7 @@
                         <label>Code</label>
                     </td>
                     <td>
-                        <input name="product_code" type="text" placeholder="Nhập code sản phẩm..." class="medium" />
+                        <input readonly name="product_code" type="text" class="medium" />
                     </td>
                 </tr>
                   <tr>

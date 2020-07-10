@@ -43,13 +43,13 @@
 					<thead>
 						<tr>
 							<th>No.</th>
-							<th>Date of booking</th>
-							<th>Product</th>
-							<th>Amount</th>
-							<th>Price</th>
-							<th>Customer</th>
-							<th>Customer Information</th>
-							<th>Process</th>
+							<th>Ngày đặt</th>
+							<th>Sản phẩm</th>
+							<th>Số lượng</th>
+							<th>Giá</th>
+							<th>Khách hàng</th>
+							<th>Thông tin khách hàng</th>
+							<th>Chức năng</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -70,26 +70,26 @@
 							<td><?php echo $result['quantity'] ?></td>
 							<td><?php echo $result['price'].' VNĐ' ?></td>
 							<td><?php echo $result['customer_id'] ?></td>
-							<td><a href="customer.php?customerid=<?php echo $result['customer_id'] ?>">View</a></td>
+							<td><a href="customer.php?customerid=<?php echo $result['customer_id'] ?>">Xem</a></td>
 							<td>
 								<?php 
 								if($result['status']==0){
 								 ?>
 
-								<a href="?shiftid=<?php echo $result['id'] ?>&qty=<?php echo $result['quantity'] ?>&proid=<?php echo $result['productId'] ?>&price=<?php echo $result['price']; ?>&time=<?php echo $result['date_order'] ?>">Accept
+								<a href="?shiftid=<?php echo $result['id'] ?>&qty=<?php echo $result['quantity'] ?>&proid=<?php echo $result['productId'] ?>&price=<?php echo $result['price']; ?>&time=<?php echo $result['date_order'] ?>">Chấp nhận
 								<?php 
 								}elseif($result['status']==1) {
 								 ?>
 
 								<?php 
-								echo 'Delivery...';
+								echo 'Đang giao hàng';
 								 ?>
 								 
 								<?php 
 								}elseif($result['status']==2) {
 
 								 ?>
-								<a href="?delid=<?php echo $result['id'] ?>&price=<?php echo $result['price']; ?>&time=<?php echo $result['date_order'] ?>">Complete</a>
+								<a href="?delid=<?php echo $result['id'] ?>&price=<?php echo $result['price']; ?>&time=<?php echo $result['date_order'] ?>">Xóa đơn</a>
 								 <?php 
 								}
 								 ?>

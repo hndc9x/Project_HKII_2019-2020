@@ -47,7 +47,7 @@
 			$unique_image = substr(md5(time()), 0,10).'.'.$file_ext;
 			$uploaded_image = "uploads/".$unique_image;
 
-			if($product_code ='' || $productName == "" || $productQuantity == "" || $category == "" || $brand == "" || $product_desc == "" || $price == "" || $type == "" || $file_name == ""){
+			if($productName == "" || $productQuantity == "" || $category == "" || $brand == "" || $product_desc == "" || $price == "" || $type == "" || $file_name == ""){
 				$alert = "<span class='error'>Không được để trống ô</span>";
 				return $alert;
 			}else{
@@ -85,7 +85,7 @@
 
 
 			if($sliderName=="" || $type==""){
-				$alert = "<span class='error'>Fields must be not empty</span>";
+				$alert = "<span class='error'>Không được để trống ô</span>";
 				return $alert; 
 			}else{
 				if(!empty($file_name)){
@@ -178,7 +178,7 @@
 			
 			if($product_more_quantity == ""){
 
-				$alert = "<span class='error'>Fields must be not empty</span>";
+				$alert = "<span class='error'>Không được để trống ô</span>";
 				return $alert; 
 			}else{
 					$qty_total = $product_more_quantity + $product_remain;
@@ -227,8 +227,8 @@
 			$uploaded_image = "uploads/".$unique_image;
 
 
-			if($product_code == "" || $productName=="" || $productQuantity=="" || $brand=="" || $category=="" || $product_desc=="" || $price=="" || $type==""){
-				$alert = "<span class='error'>Fields must be not empty</span>";
+			if($productName=="" || $productQuantity=="" || $brand=="" || $category=="" || $product_desc=="" || $price=="" || $type==""){
+				$alert = "<span class='error'>Không được để trống ô</span>";
 				return $alert; 
 			}else{
 				if(!empty($file_name)){

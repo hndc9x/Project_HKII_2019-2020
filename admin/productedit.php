@@ -51,7 +51,7 @@
                         <label>Code</label>
                     </td>
                     <td>
-                        <input name="product_code" value="<?php echo $result_product['product_code'] ?>" type="text" class="medium" />
+                        <input readonly name="product_code" value="<?php echo $result_product['product_code'] ?>" type="text" class="medium" />
                     </td>
                 </tr>
                  <tr>
@@ -67,8 +67,8 @@
                         <label>Danh mục</label>
                     </td>
                     <td>
-                        <select id="select" name="category">
-                            <option>---Chọn danh mục---</option>
+                    <select id="select" name="category">
+                            <option>---Chọn chuyên mục---</option>
                             <?php 
                             $cat = new category();
                             $catlist = $cat->show_category();
@@ -76,12 +76,7 @@
                                 while ($result = $catlist->fetch_assoc()){
                             
                              ?>
-                            <option 
-                            <?php 
-                            if($result['catId']==$result_product['catId'])
-                                { echo 'selected'; }
-                             ?>    
-                            value=" <?php echo $result['catId'] ?> "> <?php echo $result['catName'] ?></option>
+                            <option value=" <?php echo $result['catId'] ?> "> <?php echo $result['catName'] ?> </option>
                             
                             <?php 
                             }

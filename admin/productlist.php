@@ -18,25 +18,25 @@
  ?>
 <div class="grid_10">
     <div class="box round first grid">
-        <h2>Product</h2>
+        <h2>Sản phẩm</h2>
         <div class="block">  
             <table class="data display datatable" id="example">
 			<thead>
 				<tr>
 					<th>ID</th>
 					<th>Code</th>
-					<th>Product Name</th>
-					<th>Import</th>
-					<th>Amount</th>
-					<th>Sold</th>
-					<th>Inventory</th>
-					<th>Price</th>
-					<th>Image</th>
-					<th>Category</th>
-					<th>Brand</th>
+					<th>Tên sản phẩm</th>
+					<th>Nhập hàng</th>
+					<th>Số lượng</th>
+					<th>Đã bán</th>
+					<th>Hàng tồn</th>
+					<th>Giá</th>
+					<th>Hình ảnh</th>
+					<th>Danh mục</th>
+					<th>Thương hiệu</th>
 					
-					<th>Type</th>
-					<th>Action</th>
+					<th>Loại</th>
+					<th>Chức năng</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -57,7 +57,7 @@
 					<td><?php echo $i ?></td>
 					<td><?php echo $result['product_code'] ?></td>
 					<td><?php echo $result['productName'] ?></td>
-					<td><a href="productmorequantity.php?productid=<?php echo $result['productId'] ?>">Import</a></td>
+					<td><a href="productmorequantity.php?productid=<?php echo $result['productId'] ?>">Nhập hàng</a></td>
 					<td>
 						<?php echo $result['productQuantity'] ?>
 
@@ -84,7 +84,7 @@
 
 					?></td>
 					
-					<td><a href="productedit.php?productid=<?php echo $result['productId'] ?>">Edit</a> || <a href="?productid=<?php echo $result['productId'] ?>">Delete</a></td>
+					<td><a href="productedit.php?productid=<?php echo $result['productId'] ?>">Sửa</a> || <a href="?productid=<?php echo $result['productId'] ?>">Xóa</a></td>
 				</tr>
 				<?php
 							
